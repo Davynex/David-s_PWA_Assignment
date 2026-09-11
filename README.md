@@ -1,32 +1,52 @@
-# React + TypeScript + Vite
+# Offline Notes PWA
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A simple offline-first notes application built as a Progressive Web App (PWA). It allows users to create, edit, and manage notes even when they are offline.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* Create and manage notes
+* Offline-first functionality
+* Installable as a Progressive Web App
+* Responsive interface
+* Local data storage
+* Fast loading with Vite
 
-## React Compiler
+## Built With
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* React
+* TypeScript
+* Vite
+* CSS
+* Progressive Web App technologies
 
-## Expanding the Oxlint configuration
+## Run Locally
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+Clone the repository and install the dependencies:
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+```bash
+npm install
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+Start the development server:
+
+```bash
+npm run dev
+```
+
+Then open the local URL provided by Vite in your browser.
+
+## Build for Production
+
+```bash
+npm run build
+```
+
+To preview the production build locally:
+
+```bash
+npm run preview
+```
+
+## Project
+
+This project was built as part of a PWA assignment to explore offline-first web development, local data persistence, and Progressive Web App features.
